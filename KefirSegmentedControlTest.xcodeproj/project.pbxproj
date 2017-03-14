@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1047A6A5A3FEB8299A317EED /* Pods_KefirSegmentedControlTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 655E9D3C5E9253B6FA6D3EEC /* Pods_KefirSegmentedControlTest.framework */; };
 		AC1829291E77D31100E923AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1829281E77D31100E923AA /* AppDelegate.swift */; };
 		AC18292B1E77D31100E923AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC18292A1E77D31100E923AA /* ViewController.swift */; };
 		AC18292E1E77D31100E923AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC18292C1E77D31100E923AA /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		655E9D3C5E9253B6FA6D3EEC /* Pods_KefirSegmentedControlTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KefirSegmentedControlTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC1829251E77D31100E923AA /* KefirSegmentedControlTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KefirSegmentedControlTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC1829281E77D31100E923AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC18292A1E77D31100E923AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		AC18292F1E77D31100E923AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC1829321E77D31100E923AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC1829341E77D31100E923AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5C5198032E107303DF6D0FE /* Pods-KefirSegmentedControlTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KefirSegmentedControlTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-KefirSegmentedControlTest/Pods-KefirSegmentedControlTest.release.xcconfig"; sourceTree = "<group>"; };
+		D5FA6894E06911181F77117E /* Pods-KefirSegmentedControlTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KefirSegmentedControlTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KefirSegmentedControlTest/Pods-KefirSegmentedControlTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1047A6A5A3FEB8299A317EED /* Pods_KefirSegmentedControlTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D2193AAF3EE2AE3DD4FBC9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5FA6894E06911181F77117E /* Pods-KefirSegmentedControlTest.debug.xcconfig */,
+				D5C5198032E107303DF6D0FE /* Pods-KefirSegmentedControlTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AC18291C1E77D31100E923AA = {
 			isa = PBXGroup;
 			children = (
 				AC1829271E77D31100E923AA /* KefirSegmentedControlTest */,
 				AC1829261E77D31100E923AA /* Products */,
+				7D2193AAF3EE2AE3DD4FBC9F /* Pods */,
+				F65B8FFB5A434D174B1303DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = KefirSegmentedControlTest;
 			sourceTree = "<group>";
 		};
+		F65B8FFB5A434D174B1303DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				655E9D3C5E9253B6FA6D3EEC /* Pods_KefirSegmentedControlTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC1829371E77D31100E923AA /* Build configuration list for PBXNativeTarget "KefirSegmentedControlTest" */;
 			buildPhases = (
+				B67AF9CAC5183417795DD58C /* [CP] Check Pods Manifest.lock */,
 				AC1829211E77D31100E923AA /* Sources */,
 				AC1829221E77D31100E923AA /* Frameworks */,
 				AC1829231E77D31100E923AA /* Resources */,
+				668323CB6BD71542D549FFA9 /* [CP] Embed Pods Frameworks */,
+				F249D0591F26DE78F90993DA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		668323CB6BD71542D549FFA9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KefirSegmentedControlTest/Pods-KefirSegmentedControlTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B67AF9CAC5183417795DD58C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F249D0591F26DE78F90993DA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KefirSegmentedControlTest/Pods-KefirSegmentedControlTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC1829211E77D31100E923AA /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		AC1829381E77D31100E923AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5FA6894E06911181F77117E /* Pods-KefirSegmentedControlTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZNLBEN9CLK;
@@ -272,6 +348,7 @@
 		};
 		AC1829391E77D31100E923AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5C5198032E107303DF6D0FE /* Pods-KefirSegmentedControlTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZNLBEN9CLK;
